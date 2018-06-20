@@ -1,0 +1,56 @@
+/*.campaign {
+  margin: 50px;
+  border: 2px solid grey;
+  padding: 50px;
+  position: absolute;
+}*/
+
+.campaign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 10px;
+  border: 2px solid grey;
+}
+
+#campaign.container {
+  border: 2px solid grey;
+  padding-top: 15px;
+}
+
+#campaign.col-xs-2 {
+  /*background-color: grey;*/
+  border: 1px solid black;
+  font-size: small;
+  text-align: center;
+  padding: 1.7px;
+  margin: 1px;
+}
+
+#campaign.col-xs-2:hover {
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid grey;
+  background-color: #E1DFDF;
+}
+
+td {
+  /*border: 1px solid red;*/
+  text-align: left;
+  padding: 10px;
+}
+
+#flight {
+  width: 50px;
+}
