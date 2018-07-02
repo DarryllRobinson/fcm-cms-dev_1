@@ -9,7 +9,8 @@ export default class Auth {
     redirectUri: AUTH_CONFIG.callbackUrl,
     audience: `https://${AUTH_CONFIG.domain}/userinfo`,
     responseType: 'token id_token',
-    scope: 'openid'
+    scope: 'openid profile',
+    leeway: 60
   });
 
   constructor() {
@@ -17,6 +18,8 @@ export default class Auth {
     this.logout = this.logout.bind(this);
     this.handleAuthentication = this.handleAuthentication.bind(this);
     this.isAuthenticated = this.isAuthenticated.bind(this);
+    this.getProfile = this.getProfile.bind(this);
+    //this.displayProfile = this.displayProfile.bind(this);
   }
 
 /*
@@ -36,6 +39,21 @@ export default class Auth {
     });
   }
   */
+
+  getProfile() {
+    //console.log('Auth.js Auth: ', auth0);
+  }
+
+  /*displayProfile() {
+    // display the profile
+    document.querySelector('#profile-view .nickname').innerHTML =
+      userProfile.nickname;
+    document.querySelector(
+      '#profile-view .full-profile'
+    ).innerHTML = JSON.stringify(userProfile, null, 2);
+    document.querySelector('#profile-view img').src = userProfile.picture;
+  }*/
+
 
   login() {
     this.auth0.authorize();

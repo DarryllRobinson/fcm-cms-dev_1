@@ -39,10 +39,10 @@ class Menu extends Component {
               <ul  className="navbar-nav mr-auto">
                 <li  className="nav-item active">
                   <a  className="nav-link"
-                    onClick={this.goTo.bind(this, 'scheduler')}
+                    onClick={this.goTo.bind(this, 'campaign')}
                     style={{ cursor: "pointer" }}
                   >
-                    Schedule
+                    Campaign Scheduler
                   <span  className="sr-only">
                   </span>
                   </a>

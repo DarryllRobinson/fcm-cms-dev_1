@@ -15,8 +15,12 @@ class Home extends Component {
         {
           !isAuthenticated() && (
             <div className="loggedOut">
+            <br/>
             <img src={ logo } alt="fcm logo" />
               <h5>
+                Welcome to the Flying Crow Media Content Management System.
+                <br/>
+                <br/>
                 Please{' '}
                 <a
                   style={{ cursor: 'pointer', color: 'blue' }}

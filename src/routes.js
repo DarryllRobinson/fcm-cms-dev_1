@@ -1,8 +1,9 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
-import Scheduler from './components/Scheduler/Scheduler';
+import Campaign from './components/Campaign/Campaign';
 import Application from './components/Scheduler/Application';
 import Success from './components/Success/Success';
+//import Test from './components/Campaign/Test';
 //import Navtest from './components/Menu/Navtest';
 import Fail from './components/Fail/Fail';
 import Screen from './components/Screen/Screen';
@@ -28,7 +29,7 @@ export const makeMainRoutes = () => {
         <div>
           <Route path="/" render={(props) => <App auth={auth} {...props} />} />
           <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
-          <Route path="/scheduler" render={(props) => <Scheduler auth={auth} {...props} />} />
+          <Route path="/campaign" render={(props) => <Campaign auth={auth} {...props} />} />
           <Route path="/application" render={(props) => <Application auth={auth} {...props} />} />
           <Route path="/success" render={(props) => <Success auth={auth} {...props} />} />
           {/*<Route path="/navtest" render={(props) => <Navtest auth={auth} {...props} />} />*/}
