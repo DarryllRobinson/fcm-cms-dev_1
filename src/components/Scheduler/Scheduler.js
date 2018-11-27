@@ -92,7 +92,7 @@ class Scheduler extends Component {
     this.setState({ [e.target.getAttribute("name")]: !currentState });
   }
 
-myColour(hour) {
+  myColour(hour) {
   if (this.state[hour] === false) {
     return "";
   }
@@ -139,7 +139,7 @@ myColour(hour) {
           <div>
         <h3 className="text-center">Scheduler</h3>
         <hr/>
-{console.log('state: ', JSON.stringify(this.state))}
+        {console.log('state: ', JSON.stringify(this.state))}
         <div className="container justify-content-xs-center"
           id="campaign"
           onChange={this.handleChange}>
